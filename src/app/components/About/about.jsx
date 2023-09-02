@@ -21,16 +21,17 @@ function About() {
             <hr/>
             <div className="flex">
                 <div className='w-[80%] relative'>
-                    <img src="/software_club.jpg" alt=""  style={{
+                    <img src="/clubs.jpg" alt=""  style={{
                     height: "600px",
                     objectFit: "contain"
                 }}/>
                 </div>
                 <div className='w-3/5 relative' style={{
                     transform: "translate3d(-110px,117px,0)",
+                    height: "500px"
                 }}>
                     <img src="/students.jpg" alt="" style={{
-                    height: "400px",
+                    height: "500px",
                     objectFit: "cover"
                 }}/>
                 </div>
