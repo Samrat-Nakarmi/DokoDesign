@@ -2,7 +2,7 @@ import React from 'react'
 
 function About() {
   return (
-    <section className='w-full h-screen bg-[#0f0e17]'>
+    <section className='w-full bg-[#0f0e17]'>
         <div className='w-10/12 m-auto'>
             <div className='text-center'>
                 <h1 className='text-5xl text-[#fffffe] font-semibold inline-block'>
@@ -19,13 +19,21 @@ function About() {
                 </p>
             </div>
             <hr/>
-            <div className="grid-cols-2">
-                <div className="w-2/4 ">
-
+            <div className="flex">
+                <div className='w-[80%] relative'>
+                    <img src="/software_club.jpg" alt=""  style={{
+                    height: "600px",
+                    objectFit: "contain"
+                }}/>
                 </div>
-                <div className="w-2/4"></div>
-                <div className="w-2/4"></div>
-                <div className="w-2/4"></div>
+                <div className='w-3/5 relative' style={{
+                    transform: "translate3d(-110px,117px,0)",
+                }}>
+                    <img src="/students.jpg" alt="" style={{
+                    height: "400px",
+                    objectFit: "cover"
+                }}/>
+                </div>
             </div>
         </div>
     </section>
