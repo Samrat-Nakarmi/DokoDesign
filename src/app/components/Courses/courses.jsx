@@ -3,8 +3,10 @@ import Link from 'next/link';
 
 function Courses() {
   return (
-    <section className='w-full bg-[#0f0e17] pt-16 md:pt-24 border-b border-[#a7a9be]'>
-      <div className='max-w-7xl mx-auto'>
+    <section className='w-full bg-[#0f0e17] pt-12 md:pt-24 border-y border-[#a7a9be]'>
+      <div className='mx-auto' style={{
+        maxWidth: "83%"
+      }}>
         <div>
           <h1 className='text-3xl sm:text-4xl lg:text-5xl text-[#fffffe] text-center font-semibold py-6'>
             Course Streams

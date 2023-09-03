@@ -15,8 +15,10 @@ import { Pagination, Navigation } from 'swiper/modules';
 
 function Clubs() {
   return (
-    <section className='w-full bg-[#0f0e17] pt-12' id='clubs'>
-        <div className='max-w-10/12 m-auto text-center'>
+    <section className='w-full bg-[#0f0e17] py-12' id='clubs'>
+        <div className=' m-auto text-center' style={{
+            maxWidth: "83%"
+        }}>
             <h1 className='text-3xl sm:text-4xl lg:text-5xl text-[#fffffe] font-semibold mb-6'>
                 Clubs
             </h1>

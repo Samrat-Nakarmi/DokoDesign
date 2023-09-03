@@ -6,9 +6,10 @@ function Page() {
   return (
     <section className='w-full bg-[#0f0e17] pb-8 md:pb-32'>
       <Navbar />
-      <div className='max-w-7xl mx-auto'>
-        <h1 className='text-3xl sm:text-4xl lg:text-5xl text-[#ff8906] font-semibold pt-8 md:pt-12'>
-          Batches
+      <div className='mx-auto' style={{
+        maxWidth: "83%"
+      }}>
+        <h1 className='text-3xl sm:text-4xl lg:text-5xl text-[#ff8906] font-semibold pt-28' >
         </h1>
         <div className='grid gap-6 sm:gap-10 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 mt-8 md:mt-20'>
 

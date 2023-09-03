@@ -6,8 +6,19 @@ html {
     --scroll-behavior: smooth !important;
     scroll-behavior: smooth !important;
     scroll-padding-top: 88px;
-  }
-  
+}
+
+.laptop-view{
+    display: block;
+}
+
+.mobile-view {
+    display: none;
+}
+
+.active{
+    background-color: #0f0e17;
+}
 
 .swiper {
     width: 100%;
@@ -24,4 +35,19 @@ object-fit: cover;
 .swiper-button-next,
 .swiper-button-prev{
     color: #e53170 !important;
+}
+
+@media screen and (max-width: 1000px) {
+    .swiper-slide img{
+        display: block;
+        width: 80%;
+        margin: auto;
+        object-fit: cover;
+    }
+    .laptop-view {
+        display: none;
+    }
+    .mobile-view{
+        display: block;
+    }
 }
