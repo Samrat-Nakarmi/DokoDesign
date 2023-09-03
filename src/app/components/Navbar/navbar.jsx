@@ -47,7 +47,9 @@ function Navbar() {
             </div>
 
             <div className='flex items-center justify-content-center'>
-                <button>Login</button>
+                <Link href='/login'>
+                    <button>Login</button>
+                </Link>
             </div>
         </div>
     </nav>

@@ -2,7 +2,7 @@ import React from 'react'
 
 function About() {
   return (
-    <section className='w-full bg-[#0f0e17]'>
+    <section className='w-full bg-[#0f0e17]' id='about'>
         <div className='w-10/12 m-auto'>
             <div className='text-center'>
                 <h1 className='text-5xl text-[#fffffe] font-semibold inline-block'>
