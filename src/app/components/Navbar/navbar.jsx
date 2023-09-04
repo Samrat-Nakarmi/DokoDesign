@@ -1,19 +1,25 @@
 "use client"
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import Link from 'next/link'
 
 function Navbar() {
     const [navbar, setNavbar] = useState(false)
-    const changeBackground = () => {
-        if(window.scrollY > window.innerHeight){
-            setNavbar(true)
-        }
-        else{
-            setNavbar(false)
-        }
-    }
+    
+    useEffect(() => {
+        const changeBackground = () => {
+            if (window.scrollY > window.innerHeight) {
+                setNavbar(true);
+            } else {
+                setNavbar(false);
+            }
+        };
 
-    window.addEventListener('scroll', changeBackground)
+        window.addEventListener('scroll', changeBackground);
+
+        return () => {
+            window.removeEventListener('scroll', changeBackground);
+        };
+    }, []);
 
   return (
     <nav className={navbar ? 'active w-full pt-6 pb-6 text-[#fffffe] fixed z-50' : 'w-full pt-6 pb-6 text-[#fffffe] fixed z-50'}>

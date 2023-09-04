@@ -76,7 +76,7 @@ function About() {
                         </div>
                     </div>
                     <div className='w-3/5 relative' style={{
-                        transform: "translate3d(-110px,117px,0)",
+                        transform: "translate3d(-40px,117px,0)",
                         height: "500px"
                         }}>
                         <img src="/students.jpg" alt="" style={{

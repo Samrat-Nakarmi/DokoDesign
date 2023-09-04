@@ -4,6 +4,7 @@ import { Hero } from './components/Hero'
 import { About } from './components/About'
 import { Courses } from './components/Courses'
 import { Clubs } from './components/Clubs'
+import { Footer } from './components/Footer'
 
 
 export default function Home() {
@@ -16,6 +17,10 @@ export default function Home() {
       <About/>
       <Courses/>
       <Clubs/>
+      <footer>
+        <Footer/>
+      </footer>
     </main>
+    
   )
 }
